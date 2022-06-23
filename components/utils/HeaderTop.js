@@ -15,8 +15,13 @@ const IconLink = ({ to, iconSrc, children }) => {
   )
 }
 
-const HeaderTop = () => {
+const HeaderTop = ({ handleMobileNav }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+    handleMobileNav()
+  }
 
   return (
     <nav className="flex flex-wrap items-center justify-between py-4 lg:py-8">
@@ -36,10 +41,7 @@ const HeaderTop = () => {
         </li>
       </ul>
       <div className="block lg:hidden">
-        <MenuButton
-          isOpen={isMenuOpen}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        />
+        <MenuButton isOpen={isMenuOpen} onClick={toggleMenu} />
       </div>
       <Logo />
       <ul className="flex flex-col items-center md:flex-row md:space-x-7">
