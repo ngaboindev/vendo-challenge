@@ -1,28 +1,6 @@
+import { lightiningLinks, decorLinks, plantsLinks } from '@/data/links'
+
 const MegaMenu = () => {
-  const lightiningLinks = [
-    'Table lamps',
-    'Floor lamps',
-    'Ceiling lights',
-    'Lampshades',
-    'Inteligent lightning',
-  ]
-
-  const decorLinks = [
-    'Art & Figuratines',
-    'Candles',
-    'Decorative Pillows',
-    'Frames & Pictures',
-    'Mirrors',
-    'Rugs',
-  ]
-
-  const plantsLinks = [
-    'Artificial plants',
-    'Potted plants',
-    'Dried flowers',
-    'Flower pots',
-  ]
-
   return (
     <div className="absolute left-0 z-50 w-full px-8 mb-0 bg-white shadow b top-[208px] py-9">
       <div className="container mx-auto">
