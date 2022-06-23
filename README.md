@@ -1,5 +1,11 @@
 Vendo Ecommerce Test Task
 
+## Tech stacks
+
+- React/Nextjs
+- Tailwind CSS
+- Framer Motion
+
 ## Getting Started
 
 First, run the development server:

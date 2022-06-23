@@ -1,15 +1,10 @@
-import Head from 'next/head'
-import { Navbar } from '@/components/index'
+import Layout from '@/components/core/Layout'
 
 const Home = () => {
   return (
-    <>
-      <Head>
-        <title>getvendo challenge</title>
-      </Head>
-      <Navbar />
+    <Layout>
       <h1 className="text-xl font-bold text-gray-600">Vendo Challenge</h1>
-    </>
+    </Layout>
   )
 }
 
