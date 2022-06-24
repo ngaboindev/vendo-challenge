@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Logo = ({ ...props }) => {
   return (
     <Link href="/" {...props}>
-      <a>
+      <a data-testid="company-logo">
         <h3 className="text-gray-300 text-[27px] tracking-widest font-semibold">
           LOGO
         </h3>
